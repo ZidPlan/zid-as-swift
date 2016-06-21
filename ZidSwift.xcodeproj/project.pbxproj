@@ -11,6 +11,10 @@
 		7836250D1D1856D5006888B6 /* ZidSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783625021D1856D5006888B6 /* ZidSwift.framework */; };
 		783625121D1856D5006888B6 /* ZidSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783625111D1856D5006888B6 /* ZidSwiftTests.swift */; };
 		7836251D1D18573A006888B6 /* ZID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7836251C1D18573A006888B6 /* ZID.swift */; };
+		783DCDBE1D19D9BA00078FC7 /* ZidSwift-Mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 783DCDBD1D19D9BA00078FC7 /* ZidSwift-Mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		783DCDC51D19D9BA00078FC7 /* ZidSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783DCDBB1D19D9BA00078FC7 /* ZidSwift.framework */; };
+		783DCDD21D19D9DE00078FC7 /* ZidSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783625111D1856D5006888B6 /* ZidSwiftTests.swift */; };
+		783DCDD31D19D9E300078FC7 /* ZID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7836251C1D18573A006888B6 /* ZID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +24,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 783625011D1856D5006888B6;
 			remoteInfo = ZidSwift;
+		};
+		783DCDC61D19D9BA00078FC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 783624F91D1856D5006888B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 783DCDBA1D19D9BA00078FC7;
+			remoteInfo = "ZidSwift-Mac";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -31,6 +42,11 @@
 		783625111D1856D5006888B6 /* ZidSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZidSwiftTests.swift; sourceTree = "<group>"; };
 		783625131D1856D5006888B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7836251C1D18573A006888B6 /* ZID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZID.swift; sourceTree = "<group>"; };
+		783DCDBB1D19D9BA00078FC7 /* ZidSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZidSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783DCDBD1D19D9BA00078FC7 /* ZidSwift-Mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZidSwift-Mac.h"; sourceTree = "<group>"; };
+		783DCDBF1D19D9BA00078FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783DCDC41D19D9BA00078FC7 /* ZidSwift-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZidSwift-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		783DCDCB1D19D9BA00078FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +65,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		783DCDB71D19D9BA00078FC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783DCDC11D19D9BA00078FC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783DCDC51D19D9BA00078FC7 /* ZidSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +88,8 @@
 			children = (
 				783625041D1856D5006888B6 /* ZidSwift */,
 				783625101D1856D5006888B6 /* ZidSwiftTests */,
+				783DCDBC1D19D9BA00078FC7 /* ZidSwift-Mac */,
+				783DCDC81D19D9BA00078FC7 /* ZidSwift-MacTests */,
 				783625031D1856D5006888B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +99,8 @@
 			children = (
 				783625021D1856D5006888B6 /* ZidSwift.framework */,
 				7836250C1D1856D5006888B6 /* ZidSwiftTests.xctest */,
+				783DCDBB1D19D9BA00078FC7 /* ZidSwift.framework */,
+				783DCDC41D19D9BA00078FC7 /* ZidSwift-MacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +124,23 @@
 			path = ZidSwiftTests;
 			sourceTree = "<group>";
 		};
+		783DCDBC1D19D9BA00078FC7 /* ZidSwift-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				783DCDBD1D19D9BA00078FC7 /* ZidSwift-Mac.h */,
+				783DCDBF1D19D9BA00078FC7 /* Info.plist */,
+			);
+			path = "ZidSwift-Mac";
+			sourceTree = "<group>";
+		};
+		783DCDC81D19D9BA00078FC7 /* ZidSwift-MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				783DCDCB1D19D9BA00078FC7 /* Info.plist */,
+			);
+			path = "ZidSwift-MacTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -97,6 +149,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				783625061D1856D5006888B6 /* ZidSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783DCDB81D19D9BA00078FC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783DCDBE1D19D9BA00078FC7 /* ZidSwift-Mac.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +199,42 @@
 			productReference = 7836250C1D1856D5006888B6 /* ZidSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		783DCDBA1D19D9BA00078FC7 /* ZidSwift-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783DCDD01D19D9BA00078FC7 /* Build configuration list for PBXNativeTarget "ZidSwift-Mac" */;
+			buildPhases = (
+				783DCDB61D19D9BA00078FC7 /* Sources */,
+				783DCDB71D19D9BA00078FC7 /* Frameworks */,
+				783DCDB81D19D9BA00078FC7 /* Headers */,
+				783DCDB91D19D9BA00078FC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZidSwift-Mac";
+			productName = "ZidSwift-Mac";
+			productReference = 783DCDBB1D19D9BA00078FC7 /* ZidSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		783DCDC31D19D9BA00078FC7 /* ZidSwift-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783DCDD11D19D9BA00078FC7 /* Build configuration list for PBXNativeTarget "ZidSwift-MacTests" */;
+			buildPhases = (
+				783DCDC01D19D9BA00078FC7 /* Sources */,
+				783DCDC11D19D9BA00078FC7 /* Frameworks */,
+				783DCDC21D19D9BA00078FC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				783DCDC71D19D9BA00078FC7 /* PBXTargetDependency */,
+			);
+			name = "ZidSwift-MacTests";
+			productName = "ZidSwift-MacTests";
+			productReference = 783DCDC41D19D9BA00078FC7 /* ZidSwift-MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,6 +249,12 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					7836250B1D1856D5006888B6 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					783DCDBA1D19D9BA00078FC7 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					783DCDC31D19D9BA00078FC7 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -171,6 +273,8 @@
 			targets = (
 				783625011D1856D5006888B6 /* ZidSwift */,
 				7836250B1D1856D5006888B6 /* ZidSwiftTests */,
+				783DCDBA1D19D9BA00078FC7 /* ZidSwift-Mac */,
+				783DCDC31D19D9BA00078FC7 /* ZidSwift-MacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +288,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7836250A1D1856D5006888B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783DCDB91D19D9BA00078FC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783DCDC21D19D9BA00078FC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,6 +327,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		783DCDB61D19D9BA00078FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783DCDD31D19D9E300078FC7 /* ZID.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783DCDC01D19D9BA00078FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783DCDD21D19D9DE00078FC7 /* ZidSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -216,6 +350,11 @@
 			isa = PBXTargetDependency;
 			target = 783625011D1856D5006888B6 /* ZidSwift */;
 			targetProxy = 7836250E1D1856D5006888B6 /* PBXContainerItemProxy */;
+		};
+		783DCDC71D19D9BA00078FC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 783DCDBA1D19D9BA00078FC7 /* ZidSwift-Mac */;
+			targetProxy = 783DCDC61D19D9BA00078FC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -366,6 +505,76 @@
 			};
 			name = Release;
 		};
+		783DCDCC1D19D9BA00078FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "ZidSwift-Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.zidplan.ZidSwift-Mac";
+				PRODUCT_NAME = ZidSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		783DCDCD1D19D9BA00078FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "ZidSwift-Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.zidplan.ZidSwift-Mac";
+				PRODUCT_NAME = ZidSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		783DCDCE1D19D9BA00078FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "ZidSwift-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.zidplan.ZidSwift-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		783DCDCF1D19D9BA00078FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "ZidSwift-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.zidplan.ZidSwift-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -395,6 +604,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		783DCDD01D19D9BA00078FC7 /* Build configuration list for PBXNativeTarget "ZidSwift-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783DCDCC1D19D9BA00078FC7 /* Debug */,
+				783DCDCD1D19D9BA00078FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		783DCDD11D19D9BA00078FC7 /* Build configuration list for PBXNativeTarget "ZidSwift-MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783DCDCE1D19D9BA00078FC7 /* Debug */,
+				783DCDCF1D19D9BA00078FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
